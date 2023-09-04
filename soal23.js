@@ -17,3 +17,18 @@ const students = [
     { name: "Evan", score: 55},
     { name: "Rowling", score: 90}
 ]
+
+function jalankan(){
+    for(let i = 0; i < students.length; i++){
+        if(students[i].score < 50){
+            console.log(`${students[i].name} tidak lulus, belajar lebih keras lagi! ujian ini anda memperoleh skor ${students[i].score}`)
+        } else if(students[i].score > 50 && students[i].score < 70){
+            console.log(`${students[i].name} remidial, persiapkan diri anda baik-baik! ujian ini anda memperolah skor ${students[i].score}`)
+        } else if(students[i].score > 70){
+            console.log(`${students[i].name} lulus, selamat atas kerja keras kamu! pertahankan yaa, ujian ini anda memperolah skor ${students[i].score}`)
+        }
+
+    }
+}
+
+jalankan(students)
